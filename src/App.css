@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../src/Components/Lib/fonts/Segoe\ UI\ Bold\ Italic.ttf') format('woff2'),
+   url('../src/Components/Lib/fonts/Segoe\ UI\ Bold.ttf') format('woff');
+ }
+ 
+ @font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../src/Components/Lib/fonts/Segoe\ UI\ Bold.ttf') format('woff2'),
+   url('../src/Components/Lib/fonts/Segoe\ UI\ Bold\ Italic.ttf') format('woff');
+ }
+ 
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+   url('../src/Components/Lib/fonts/roboto-v29-latin-regular.woff') format('woff2'),
+   url('../src//Components//Lib/fonts/roboto-v29-latin-regular.woff2') format('woff');
+ }
+ 
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+   url('../src/Components/Lib/fonts/roboto-v29-latin-900.woff') format('woff2'),
+   url('../src/Components/Lib/fonts/roboto-v29-latin-900.woff2') format('woff');
+ }
+
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", "sans-serif";
+  font-size: 18px;
+  line-height: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+::selection {
+  color: red;
+  background-color: darkcyan;
+}
+
+
+
+
+.container{
+  display: flex;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.header__btn{
+  width: 230px;
+height: 55px;
+border-radius: 27.5px;
+background-color: #1D9BF0;
+font-family: "Segoe UI";
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+border: none;
+cursor: pointer;
+
+}
+
+
+.header__list{
+  text-align: left;
+}
+.header__item21{
+  margin-left: 25px;
+}
+.header__item{
+  margin-bottom: 25px;
+ 
+}
+.header__link{
+  gap: 15px;
+  font-family: "Segoe UI";
+font-size: 18px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+}
+.imga{
+  margin-right: 10px;
+}
+.flev{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.bobur{
+  margin-bottom: -5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__item2{
+  margin-bottom: 250px;
+}
+.section__list{
+  width: 909px;
+}
+.section__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.a1{
+  margin-left: 25px;
+  
+}
+.sdsds{
+  margin-top: 25px;
+  margin-left: 40px;
 }
